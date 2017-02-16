@@ -19,7 +19,6 @@ bot.onText(/\chuck/, (message) => {
 	console.log("attempting get");
 	request(url, function (error, response, body) {
 	    if (!error && response.statusCode == 200) {
-	      console.log(jsonbody);
 	    }
 	});
 	console.log("printing jsonbody");
