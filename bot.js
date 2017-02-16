@@ -14,18 +14,16 @@ bot.onText(/\hai/, (message) => {
 
 
 const url = 'https://api.chucknorris.io/jokes/random';
-var jsonbody = '';
 
 bot.onText(/\chuck/, (message) => {
 	console.log("attempting get");
 	request(url, function (error, response, body) {
 	    if (!error && response.statusCode == 200) {
-	      jsonbody = JSON.parse(body)
 	      console.log(jsonbody);
 	    }
 	});
 	console.log("printing jsonbody");
-	bot.sendMessage(message.chat.id, jsonbody);
+	bot.sendMessage(message.chat.id, "halp");
 });
 
 
