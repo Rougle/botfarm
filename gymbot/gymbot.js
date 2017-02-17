@@ -3,7 +3,7 @@ const request = require('request');
 const TelegramBot = require('node-telegram-bot-api');
 const packageInfo = require('./package.json');
 
-const token = '369533054:AAGMXhmLKCTKFQDKOfann08Ytg7A0bJzaPg';
+const token = 'TELEGRAM-TOKEN-HERE';
 const bot = new TelegramBot(token, { polling: true });
 const content = require('./gymbot-content.json');
 
