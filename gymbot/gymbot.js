@@ -9,7 +9,7 @@ const content = require('./gymbot-content.json');
 
 const app = express();
 
-bot.onText(/\/hai/, (message) => {
+bot.onText(/\hai/, (message) => {
   bot.sendMessage(message.chat.id, 'oh hai');
 });
 
